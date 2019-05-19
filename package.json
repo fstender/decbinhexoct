@@ -4,7 +4,7 @@
   "description": "Simple converter between decimal, binary, hex, and octal numbers",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-hyperspace.git"
+    "url": "git+https://github.com/fstender/decbinhexoct.git"
   },
   "author": {
     "name": "Frank Stender",
@@ -34,9 +34,7 @@
     "rimraf": "^2.6.3"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-hyperspace"
+    "decimal", "binary", "hex", "octal", "converter"
   ],
   "license": "MIT"
 }
