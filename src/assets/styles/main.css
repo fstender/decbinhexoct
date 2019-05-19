@@ -1,0 +1,17 @@
+input {
+    border: 1px solid lightslategray;
+    font-size: 20pt;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    text-align: right;
+}
+
+input[readonly]
+{
+    border: none;
+}
+
+span.label {
+    width: 160px;
+    display: inline-block;
+    font-size: 20pt;
+}
