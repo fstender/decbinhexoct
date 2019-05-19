@@ -1,3 +1,7 @@
+body {
+    font-size: 20pt;
+}
+
 input {
     border: 1px solid lightslategray;
     font-size: 20pt;
@@ -13,5 +17,29 @@ input[readonly]
 span.label {
     width: 160px;
     display: inline-block;
-    font-size: 20pt;
 }
+
+table.details {
+    table-layout: fixed;
+    width: 75%;
+    text-align: right;
+}
+
+table.details td {
+    padding: 6px;
+}
+
+td.bit_on {
+    background-color: seagreen;
+    color: white;
+}
+
+td.bit_off {
+    background-color: maroon;
+    color: white;
+}
+
+sup {
+    font-size: small;
+}
+

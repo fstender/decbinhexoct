@@ -4,6 +4,7 @@ import DecimalInput from "./DecimalInput"
 import BinaryOutput from './BinaryOutput';
 import HexOutput from './HexOutput';
 import OctalOutput from './OctalOutput';
+import BinaryDetails from './BinaryDetails';
 
 class Converter extends React.Component {
     constructor(props) {
@@ -25,6 +26,8 @@ class Converter extends React.Component {
             <BinaryOutput value={decimal}></BinaryOutput>
             <HexOutput value={decimal}></HexOutput>
             <OctalOutput value={decimal}></OctalOutput>
+            <hr></hr>
+            <BinaryDetails value={decimal}></BinaryDetails>
         </div>
       );
     }
