@@ -17,6 +17,7 @@ class ByteDetails extends React.Component {
   render() {
     const value = this.props.value;
     const base = this.props.base;
+    const title = this.props.title;
 
     const valueAsHex = this.toHex(value, base);
     const needed = valueAsHex.length;
@@ -39,7 +40,7 @@ class ByteDetails extends React.Component {
         <table className="details">
           <thead>
             <tr>
-              <th colspan={needed + 3} className="center">Hex conversion details</th>
+              <th colspan={needed + 3} className="center">{title} conversion details</th>
             </tr>
           </thead>
           <tbody>
