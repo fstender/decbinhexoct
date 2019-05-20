@@ -1,10 +1,11 @@
 body {
-    font-size: 20pt;
+    font-size: 18pt;
+    margin: 0 40px;
 }
 
 input {
     border: 1px solid lightslategray;
-    font-size: 20pt;
+    font-size: 18pt;
     font-family: 'Consolas', 'Courier New', Courier, monospace;
     text-align: right;
 }
@@ -38,18 +39,13 @@ table.details td {
 }
 
 table.details td.br {
-    border-right: 1px solid black;
+    border-right: 1px solid gray;
 }
 
-table.details td.on {
-    background-color: #c4eec4;
+header {
+    text-align: center;
 }
 
-table.details td.off {
-    background-color: #f8a1a1;
+footer {
+    text-align: right;
 }
-
-sup {
-    font-size: small;
-}
-

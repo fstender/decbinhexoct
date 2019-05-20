@@ -7,11 +7,13 @@ class ByteDetails extends React.Component {
   }
 
   sumOperand(bytevalue, byte, value, base) {
-    let tmp = bytevalue * parseInt(byte, base);
-    if ((value - tmp) > tmp) {
-      return '+ ' + tmp;
+    if (byte !== undefined) {
+      let tmp = bytevalue * parseInt(byte, base);
+      if (value - tmp > tmp) {
+        return '+ ' + tmp;
+      }
+      return tmp;
     }
-    return tmp;
   }
 
   render() {
@@ -20,7 +22,7 @@ class ByteDetails extends React.Component {
     const title = this.props.title;
 
     const valueAsHex = this.toHex(value, base);
-    const needed = valueAsHex.length;
+    const needed = Math.max(4, valueAsHex.length);
 
     let row1 = [],
       row2 = [],
@@ -40,7 +42,9 @@ class ByteDetails extends React.Component {
         <table className="details">
           <thead>
             <tr>
-              <th colspan={needed + 3} className="center">{title} conversion details</th>
+              <th colspan={needed + 3} className="center">
+                {title} conversion details
+              </th>
             </tr>
           </thead>
           <tbody>

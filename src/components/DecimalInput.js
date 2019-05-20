@@ -19,7 +19,9 @@ class DecimalInput extends React.Component {
       (keyCode >= 48 && keyCode <= 57) || // Numbers
       (keyCode >= 96 && keyCode <= 105) || // Numpad
       keyCode === 8 || // Backspace
-      keyCode === 46 // Delete
+      keyCode === 46 || // Delete
+      keyCode === 35 || // End
+      keyCode === 36 // Home
     ) {
       return;
     }

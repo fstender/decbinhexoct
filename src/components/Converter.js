@@ -29,7 +29,9 @@ class Converter extends React.Component {
             <OctalOutput value={decimal}></OctalOutput>
             <hr></hr>
             <BinaryDetails value={decimal}></BinaryDetails>
+            <br></br>
             <ByteDetails value={decimal} base={16} title="Hex"></ByteDetails>
+            <br></br>
             <ByteDetails value={decimal} base={8} title="Octal"></ByteDetails>
         </div>
       );
