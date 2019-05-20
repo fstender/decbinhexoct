@@ -21,16 +21,12 @@ span.label {
 }
 
 table.details {
-    text-align: right;
     font-size: 16pt;
+    text-align: right;
 }
 
 table.details th {
     text-align: left;
-}
-
-table.details th.center {
-    text-align: center;
 }
 
 table.details td {
@@ -38,7 +34,7 @@ table.details td {
     min-width: 40px;
 }
 
-table.details td.br {
+table.details tr:nth-child(-n+3) td {
     border-right: 1px solid gray;
 }
 

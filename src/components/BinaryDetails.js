@@ -30,9 +30,9 @@ class BinaryDetails extends React.Component {
     for (let i = needed; i >= 0; i--) {
       let bitvalue = Math.pow(2, i);
       let bitset = (value & bitvalue) === bitvalue;
-      row1.push(<td className="br">{i}</td>);
-      row2.push(<td className="br">{bitvalue}</td>);
-      row3.push(<td className="br">{bitset ? '1' : '0'}</td>);
+      row1.push(<td>{i}</td>);
+      row2.push(<td>{bitvalue}</td>);
+      row3.push(<td>{bitset ? '1' : '0'}</td>);
       row4.push(<td>{this.sumOperand(bitset, bitvalue, value)}</td>);
     }
 
@@ -41,7 +41,7 @@ class BinaryDetails extends React.Component {
         <table className="details">
           <thead>
             <tr>
-              <th colspan={needed + 3} className="center">
+              <th colspan={needed} className="center">
                 Binary conversion details
               </th>
             </tr>
@@ -60,7 +60,7 @@ class BinaryDetails extends React.Component {
               {row3}
             </tr>
             <tr>
-              <th />
+              <th>&nbsp;</th>
               {row4}
               <td>
                 ={' '}

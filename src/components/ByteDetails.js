@@ -31,9 +31,9 @@ class ByteDetails extends React.Component {
     for (let i = needed - 1; i >= 0; i--) {
       let bytevalue = Math.pow(base, i);
       let byte = valueAsHex[valueAsHex.length - i - 1];
-      row1.push(<td className="br">{i}</td>);
-      row2.push(<td className="br">{bytevalue}</td>);
-      row3.push(<td className="br">{byte}</td>);
+      row1.push(<td>{i}</td>);
+      row2.push(<td>{bytevalue}</td>);
+      row3.push(<td>{byte}</td>);
       row4.push(<td>{this.sumOperand(bytevalue, byte, value, base)}</td>);
     }
 
@@ -42,7 +42,7 @@ class ByteDetails extends React.Component {
         <table className="details">
           <thead>
             <tr>
-              <th colspan={needed + 3} className="center">
+              <th colspan={needed} className="center">
                 {title} conversion details
               </th>
             </tr>
@@ -61,7 +61,7 @@ class ByteDetails extends React.Component {
               {row3}
             </tr>
             <tr>
-              <th />
+              <th>&nbsp;</th>
               {row4}
               <td>
                 ={' '}
