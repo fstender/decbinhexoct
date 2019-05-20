@@ -5,6 +5,7 @@ import BinaryOutput from './BinaryOutput';
 import HexOutput from './HexOutput';
 import OctalOutput from './OctalOutput';
 import BinaryDetails from './BinaryDetails';
+import ByteDetails from './ByteDetails';
 
 class Converter extends React.Component {
     constructor(props) {
@@ -28,6 +29,8 @@ class Converter extends React.Component {
             <OctalOutput value={decimal}></OctalOutput>
             <hr></hr>
             <BinaryDetails value={decimal}></BinaryDetails>
+            <ByteDetails value={decimal} base={16}></ByteDetails>
+            <ByteDetails value={decimal} base={8}></ByteDetails>
         </div>
       );
     }

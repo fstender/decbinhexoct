@@ -2,9 +2,8 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import Footer from '../components/Footer';
-import Converter from "../components/Converter"
+import Converter from '../components/Converter';
 import Header from '../components/Header';
-
 
 const IndexPage = () => (
   <Layout>
@@ -13,8 +12,8 @@ const IndexPage = () => (
     <div id="wrapper">
       <section id="intro">
         <div className="inner">
-          <Converter></Converter>
-        </div> 
+          <Converter />
+        </div>
       </section>
     </div>
 

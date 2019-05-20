@@ -34,7 +34,11 @@
     "rimraf": "^2.6.3"
   },
   "keywords": [
-    "decimal", "binary", "hex", "octal", "converter"
+    "decimal",
+    "binary",
+    "hex",
+    "octal",
+    "converter"
   ],
   "license": "MIT"
 }

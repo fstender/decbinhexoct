@@ -20,23 +20,33 @@ span.label {
 }
 
 table.details {
-    table-layout: fixed;
-    width: 75%;
     text-align: right;
+    font-size: 16pt;
+}
+
+table.details th {
+    text-align: left;
+}
+
+table.details th.center {
+    text-align: center;
 }
 
 table.details td {
     padding: 6px;
+    min-width: 40px;
 }
 
-td.bit_on {
-    background-color: seagreen;
-    color: white;
+table.details td.br {
+    border-right: 1px solid black;
 }
 
-td.bit_off {
-    background-color: maroon;
-    color: white;
+table.details td.on {
+    background-color: #c4eec4;
+}
+
+table.details td.off {
+    background-color: #f8a1a1;
 }
 
 sup {
